@@ -2,26 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
+
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom ,purple,black,black);
+
+  background-size: cover; /* Adjusts the size of the background image */
+  background-repeat: no-repeat;
+  min-height: 150vh; /* Prevents the image from repeating */
+  /* Optionally, you can add more properties like background-position, background-attachment, etc. */
+}
+
+
+.marketplace-gradient {
+  background-color:linear-gradient(to right,#00E1FD,#FC007A);
+
+  /* background: rgb(to right, #FF1493, #00FF00, #4169E1); */
+  background-image: url('/Users/liathkaral/Downloads/image.jpg');
+}
+.image-container {
+  justify-content: end;
+}
+
+.headline {
+
+  font-family:  'Arial Black', Gadget, sans-serif;
+  min-height: 17vh;
+  font-size: 1.2rem;
+ 
+  -webkit-text-fill-color:white; 
+  
+   /* Adding a shadow to create a 3D effect */
+  
 }
